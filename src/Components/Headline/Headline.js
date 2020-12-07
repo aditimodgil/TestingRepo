@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './styles.scss';
+import PropTypes from 'prop-types';
+
 
 class Headline extends Component{
     constructor(props){
@@ -7,7 +9,7 @@ class Headline extends Component{
     }
 
     render(){
-        const {title, description} = this.props;
+        const {title, description, tempArr} = this.props;
         
         if(!title){
             return null;
@@ -22,6 +24,20 @@ class Headline extends Component{
         );
     }
    
+}
+
+Headline.propTypes={
+    title : PropTypes.string,
+    description : PropTypes.string,
+    tempArr: PropTypes.arrayOf(PropTypes.shape({
+        fName: PropTypes.string,
+        lName: PropTypes.string,
+        email: PropTypes.string,
+        age: PropTypes.number,
+        onlineStatus: PropTypes.bool
+
+    }))
+
 }
 
 export default Headline;
