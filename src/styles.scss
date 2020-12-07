@@ -1,0 +1,20 @@
+.app{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .content{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    width:96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    min-width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+    }
+
+
+}
