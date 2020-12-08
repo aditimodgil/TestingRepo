@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 import Header from './Components/Header/Header';
 import Headline from './Components/Headline/Headline';
-import HeadLine from './Components/Headline/Headline';
+
 
 function App() {
 
